@@ -1,0 +1,45 @@
+nav.index li:nth-of-type(2n){
+		margin: 0 25px 15px 25px;
+	}
+
+	nav.index li a{
+		background: #fff;
+		border: solid 1px #000;
+		cursor: pointer;
+
+		display: block;
+		position: absolute;
+		width: 298px; /* - 2px border */
+		height: 178px; /* - 2px border */
+		z-index: 2;
+		-webkit-transition: all 100ms ease-in-out;
+		-moz-transition: all 100ms ease-in-out;
+        -ms-transition: all 100ms ease-in-out;
+        -o-transition: all 100ms ease-in-out;
+		transition: all 100ms ease-in-out;
+	}
+
+	nav.index li span.bg {
+		background: url('/img/bg_index_span.png') left bottom no-repeat;
+		display: block;
+		position: absolute;
+		margin: 0 0 0 0px;
+		width: 300px;
+		height: 180px;
+		padding: 5px 0 0 5px;
+		z-index: 1;
+
+	}
+
+		nav.index li a:hover + span.bg {
+			background-position: -305px 0;
+		}
+
+		nav.index li a:active,	nav.index li.warp_bg a {
+			margin: 5px 0 0 5px;
+		}
+
+		nav.index li a:active + span.bg,	nav.index li.warp_bg span.bg  {
+			background-position: -310px -5px;
+			margin: 5px 0 0 5px;
+		}

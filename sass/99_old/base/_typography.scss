@@ -1,0 +1,40 @@
+$blockquote: $type-border !default;
+$sans: "PT Sans", "Helvetica Neue", Arial, sans-serif !default;
+$serif: "PT Serif", Georgia, Times, "Times New Roman", serif !default;
+$mono: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace !default;
+$heading-font-family: "PT Serif", "Georgia", "Helvetica Neue", Arial, sans-serif !default;
+$header-title-font-family: $heading-font-family !default;
+$header-subtitle-font-family: $heading-font-family !default;
+
+header {
+  h1, h2 {
+    font-family: futura-pt;
+    font-weight: 500;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 26px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    color: #000; } }
+
+h1 {
+  font-family: utopia-std;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 60px;
+  margin-bottom: 23px; }
+
+.home h1 {
+  text-shadow: -5px 0px 5px white, 0px -5px 5px white, 5px 0px 5px white, 0px 5px 5px white; }
+
+p {
+  font-family: ff-basic-gothic-web-pro;
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 12px; }
+
+body {
+  font-family: futura-pt;
+  color: #4e4e4e;
+  font-size: 100%; }

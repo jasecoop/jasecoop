@@ -1,161 +1,91 @@
-$blockquote: $type-border !default;
-$sans: "PT Sans", "Helvetica Neue", Arial, sans-serif !default;
-$serif: "PT Serif", Georgia, Times, "Times New Roman", serif !default;
-$mono: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace !default;
-$heading-font-family: "PT Serif", "Georgia", "Helvetica Neue", Arial, sans-serif !default;
-$header-title-font-family: $heading-font-family !default;
-$header-subtitle-font-family: $heading-font-family !default;
+header {
+  h1, h2 {
+    font-family: futura-pt;
+    font-weight: 500;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 26px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    color: #000; } }
 
-// Fonts
-.heading {
-  font-family: $heading-font-family;
-}
-.sans { font-family: $sans; }
-.serif { font-family: $serif; }
-.mono { font-family: $mono; }
+h1 {
+  font-family: utopia-std;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 60px;
+  margin-bottom: 23px; }
 
-body > header h1 {
-  font-size: 2.2em;
-  @extend .heading;
-  font-family: $header-title-font-family;
-  font-weight: normal;
-  line-height: 1.2em;
-  margin-bottom: 0.6667em;
-}
-body > header h2 {
-  font-family: $header-subtitle-font-family;
-}
+.home h1 {
+  text-shadow: -5px 0px 5px white, 0px -5px 5px white, 5px 0px 5px white, 0px 5px 5px white; }
+
+p {
+  font-family: ff-basic-gothic-web-pro;
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 12px; }
 
 body {
-  line-height: 1.5em;
-  color: $text-color;
-  @extend .serif;
-}
-h1 {
-  font-size: 2.2em;
-  line-height: 1.2em;
-}
+  font-family: futura-pt;
+  color: #4e4e4e;
+  font-size: 100%; }
 
-@media only screen and (min-width: 992px) {
-  body { font-size: 1.15em; }
-  h1 { font-size: 2.6em; line-height: 1.2em; }
-}
 
-#{headings()}{
-  @extend .heading;
-  text-rendering: optimizelegibility;
-  margin-bottom: 1em;
-  font-weight: bold;
-}
-h2, section h1 {
-  font-size: 1.5em;
-}
-h3, section h2, section section h1 {
-  font-size: 1.3em;
-}
-h4, section h3, section section h2, section section section h1 {
-  font-size: 1em;
-}
-h5, section h4, section section h3 {
-  font-size: .9em;
-}
-h6, section h5, section section h4, section section section h3 {
-  font-size: .8em;
-}
-p, blockquote, ul, ol { margin-bottom: 1.5em; }
+  // Kerning using lettering.js
 
-ul { list-style-type: disc;
-  ul { list-style-type: circle; margin-bottom: 0px;
-    ul { list-style-type: square; margin-bottom: 0px; }}}
+  header h1 .char1 {padding: 0 0 0 0;}
+  header h1 .char2 {padding: 0 1px 0 2px;}
+  header h1 .char3 {padding: 0 1px 0 1px;}
+  header h1 .char4 {padding: 0 1px 0 1px;}
+  header h1 .char5 {padding: 0 1px 0 1px;}
+  header h1 .char6 {padding: 0 1px 0 1px;}
+  header h1 .char7 {padding: 0 2px 0 1px;}
+  header h1 .char8 {padding: 0 0 0 0;}
+  
+  header h2.des {width: 125px;}
+  header h2.des .char1 {padding: 0 0 0 0;}
+  header h2.des .char2 {padding: 0 1px 0 2px;}
+  header h2.des .char3 {padding: 0 1px 0 1px;}
+  header h2.des .char4 {padding: 0 1px 0 1px;}
+  header h2.des .char5 {padding: 0 1px 0 1px;}
+  header h2.des .char6 {padding: 0 1px 0 1px;}
+  header h2.des .char7 {padding: 0 2px 0 1px;}
+  header h2.des .char8 {padding: 0 0 0 0;}
+  
+  header h2.loc {text-align: right; padding: 0 10px;}
+  header h2.loc .char1 {padding: 0 0 0 0;}
+  header h2.loc .char2 {padding: 0 1px 0 2px;}
+  header h2.loc .char3 {padding: 0 1px 0 1px;}
+  header h2.loc .char4 {padding: 0 1px 0 1px;}
+  header h2.loc .char5 {padding: 0 1px 0 1px;}
+  header h2.loc .char6 {padding: 0 1px 0 1px;}
+  header h2.loc .char7 {padding: 0 1px 0 1px;}
+  header h2.loc .char8 {padding: 0 1px 0 1px;}
+  header h2.loc .char9 {padding: 0 1px 0 1px;}
+  header h2.loc .char10 {padding: 0 1px 0 1px;}
+  header h2.loc .char11 {padding: 0 1px 0 1px;}
+  header h2.loc .char12 {padding: 0 2px 0 1px;}
+  header h2.loc .char13 {padding: 0 1px 0 1px;}
+  header h2.loc .char14 {padding: 0 2px 0 1px;}
 
-ol { list-style-type: decimal;
-  ol { list-style-type: lower-alpha; margin-bottom: 0px;
-    ol { list-style-type: lower-roman; margin-bottom: 0px; }}}
+  header nav ul li a.por .char1 {padding: 0 0px 0 0px;}
+  header nav ul li a.por .char2 {padding: 0 1px 0 1px;}
+  header nav ul li a.por .char3 {padding: 0 1px 0 1px;}
+  header nav ul li a.por .char4 {padding: 0 1px 0 1px;}
+  header nav ul li a.por .char5 {padding: 0 1px 0 1px;}
+  header nav ul li a.por .char6 {padding: 0 1px 0 1px;}
+  header nav ul li a.por .char7 {padding: 0 1px 0 1px;}
+  header nav ul li a.por .char8 {padding: 0 1px 0 1px;}
+  header nav ul li a.por .char9 {padding: 0 1px 0 1px;}
+    
 
-ul, ol { &, ul, ol { margin-left: 1.3em; }}
-
-strong { font-weight: bold; }
-
-em { font-style: italic; }
-
-sup, sub { font-size: 0.8em; position: relative;  display: inline-block; }
-sup { top: -.5em; }
-sub { bottom: -.5em; }
-
-q { font-style: italic;
-  &:before { content: "\201C"; }
-  &:after { content: "\201D"; }
-}
-
-em, dfn { font-style: italic; }
-
-strong, dfn { font-weight: bold; }
-
-del, s { text-decoration: line-through; }
-
-abbr, acronym { border-bottom: 1px dotted; cursor: help; }
-
-pre, code, tt { @extend .mono; }
-
-sub, sup { line-height: 0; }
-
-hr { margin-bottom: 0.2em; }
-
-small { font-size: .8em; }
-
-big { font-size: 1.2em; }
-
-blockquote {
-  $bq-margin: 1.2em;
-  font-style: italic;
-  position: relative;
-  font-size: 1.2em;
-  line-height: 1.5em;
-  padding-left: 1em;
-  border-left: 4px solid rgba($text-color-light, .5);
-  cite {
-    font-style: italic;
-    a { color: $text-color-light !important; word-wrap: break-word; }
-    &:before { content: '\2014'; padding:{right: .3em; left: .3em;} color: $text-color-light; }
-  }
-  @media only screen and (min-width: 992px) {
-    padding-left: 1.5em;
-    border-left-width: 4px;
-  }
-}
-
-.pullquote-right:before,
-.pullquote-left:before {
-  /* Reset metrics. */
-  padding: 0;
-  border: none;
-
-  /* Content */
-  content: attr(data-pullquote);
-
-  /* Pull out to the right, modular scale based margins. */
-  float: right;
-  width: 45%;
-  margin: .5em 0 1em 1.5em;
-
-  /* Baseline correction */
-  position: relative;
-  top: 7px;
-  font-size: 1.4em;
-  line-height: 1.45em;
-}
-
-.pullquote-left:before {
-  /* Make left pullquotes align properly. */
-  float: left;
-  margin: .5em 1.5em 1em 0;
-}
-
-/* @extend this to force long lines of continuous text to wrap */
-.force-wrap {
-  white-space: -moz-pre-wrap;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
+  header nav ul li a.inf .char1 {padding: 0 0px 0 0px;}
+  header nav ul li a.inf .char2 {padding: 0 1px 0 1px;}
+  header nav ul li a.inf .char3 {padding: 0 1px 0 1px;}
+  header nav ul li a.inf .char4 {padding: 0 1px 0 1px;}
+  header nav ul li a.inf .char5 {padding: 0 1px 0 1px;}
+  header nav ul li a.inf .char6 {padding: 0 1px 0 1px;}
+  header nav ul li a.inf .char7 {padding: 0 1px 0 1px;}
+  header nav ul li a.inf .char8 {padding: 0 1px 0 1px;}
+  header nav ul li a.inf .char9 {padding: 0 1px 0 1px;}

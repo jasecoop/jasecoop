@@ -1,18 +1,129 @@
-body > header {
-  background: $header-bg;
-  h1 {
-    display: inline-block;
-    margin: 0;
-    a, a:visited, a:hover {
-      color: $title_color;
-      text-decoration: none;
-    }
-  }
-  h2 {
-    margin: .2em 0 0;
-    @extend .sans;
-    font-size: 1em;
-    color: $subtitle-color;
-    font-weight: normal;
-  }
+header {
+  margin: 12px 0 0 0;
+  height: 180px;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
 }
+  
+  .box {
+    background-color: #fff;
+    
+    display: block;
+    padding: 0 0 0 10px;
+    margin-bottom: 0;
+
+    color: #000;
+    font-family: futura-pt;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 29px;
+    text-transform: uppercase;
+  }
+
+  header h1, header h2 {
+    border-bottom: solid 1px #000;
+    
+  }
+
+  header h1 {
+    border-left: solid 1px #000;
+    float: left;
+    width:138px;
+  }
+
+  header h2 {
+    border-right: solid 1px #000;
+    color: #ccc;
+    float: left;
+    width: 170px;
+  }
+
+
+  header nav.main {
+    float: right;
+    width: 340px;
+  }
+
+    header nav.main ul li a {
+      border-left: solid 1px #000;
+    }
+
+    header nav a {
+      border-bottom: solid 1px #000;
+      border-right: solid 1px #000;
+      cursor: pointer;
+      
+      display: block;
+      float: left;
+      width: 328px;
+    }
+    
+    header nav a.current  {
+        background: #e7faeb;
+      }
+  
+  header h1 .char1 {padding: 0 0 0 0;}
+  header h1 .char2 {padding: 0 1px 0 2px;}
+  header h1 .char3 {padding: 0 1px 0 1px;}
+  header h1 .char4 {padding: 0 1px 0 1px;}
+  header h1 .char5 {padding: 0 1px 0 1px;}
+  header h1 .char6 {padding: 0 1px 0 1px;}
+  header h1 .char7 {padding: 0 2px 0 1px;}
+  header h1 .char8 {padding: 0 0 0 0;}
+  
+  header h2.des {width: 125px;}
+  header h2.des .char1 {padding: 0 0 0 0;}
+  header h2.des .char2 {padding: 0 1px 0 2px;}
+  header h2.des .char3 {padding: 0 1px 0 1px;}
+  header h2.des .char4 {padding: 0 1px 0 1px;}
+  header h2.des .char5 {padding: 0 1px 0 1px;}
+  header h2.des .char6 {padding: 0 1px 0 1px;}
+  header h2.des .char7 {padding: 0 2px 0 1px;}
+  header h2.des .char8 {padding: 0 0 0 0;}
+  
+  header h2.loc {text-align: right; padding: 0 10px;}
+  header h2.loc .char1 {padding: 0 0 0 0;}
+  header h2.loc .char2 {padding: 0 1px 0 2px;}
+  header h2.loc .char3 {padding: 0 1px 0 1px;}
+  header h2.loc .char4 {padding: 0 1px 0 1px;}
+  header h2.loc .char5 {padding: 0 1px 0 1px;}
+  header h2.loc .char6 {padding: 0 1px 0 1px;}
+  header h2.loc .char7 {padding: 0 1px 0 1px;}
+  header h2.loc .char8 {padding: 0 1px 0 1px;}
+  header h2.loc .char9 {padding: 0 1px 0 1px;}
+  header h2.loc .char10 {padding: 0 1px 0 1px;}
+  header h2.loc .char11 {padding: 0 1px 0 1px;}
+  header h2.loc .char12 {padding: 0 2px 0 1px;}
+  header h2.loc .char13 {padding: 0 1px 0 1px;}
+  header h2.loc .char14 {padding: 0 2px 0 1px;}
+
+  header nav ul li a.por .char1 {padding: 0 0px 0 0px;}
+  header nav ul li a.por .char2 {padding: 0 1px 0 1px;}
+  header nav ul li a.por .char3 {padding: 0 1px 0 1px;}
+  header nav ul li a.por .char4 {padding: 0 1px 0 1px;}
+  header nav ul li a.por .char5 {padding: 0 1px 0 1px;}
+  header nav ul li a.por .char6 {padding: 0 1px 0 1px;}
+  header nav ul li a.por .char7 {padding: 0 1px 0 1px;}
+  header nav ul li a.por .char8 {padding: 0 1px 0 1px;}
+  header nav ul li a.por .char9 {padding: 0 1px 0 1px;}
+    
+
+  header nav ul li a.inf .char1 {padding: 0 0px 0 0px;}
+  header nav ul li a.inf .char2 {padding: 0 1px 0 1px;}
+  header nav ul li a.inf .char3 {padding: 0 1px 0 1px;}
+  header nav ul li a.inf .char4 {padding: 0 1px 0 1px;}
+  header nav ul li a.inf .char5 {padding: 0 1px 0 1px;}
+  header nav ul li a.inf .char6 {padding: 0 1px 0 1px;}
+  header nav ul li a.inf .char7 {padding: 0 1px 0 1px;}
+  header nav ul li a.inf .char8 {padding: 0 1px 0 1px;}
+  header nav ul li a.inf .char9 {padding: 0 1px 0 1px;}
+
+  header .nextprevfake {
+    background: url(../../img/nextprev_fake.png);
+    display: block;
+    position: fixed;
+    margin: 0 0 0 201px;
+    width: 210px;
+    height: 62px;
+  }

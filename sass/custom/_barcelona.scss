@@ -1,0 +1,12 @@
+#barcelona {
+  background: url(../../img/custom/barcelona/bg.png) top center no-repeat #e2e2e3;
+  .work {
+    background: url(../../img/custom/barcelona/work.png) no-repeat;
+    display: block;
+    height: 960px;
+    width: 960px;
+    padding-bottom: 100px;
+    p {
+      text-align: center;
+      &.top {
+        padding-top: 380px; } } } }

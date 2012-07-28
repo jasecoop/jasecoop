@@ -1,0 +1,15 @@
+body.dabble {
+  background: red; }
+
+#dabble {
+  background: #EDEDED;
+  height: 100%;
+  padding-top: 200px;
+  bottom: 0;
+  img {
+    margin: -300px 400px;
+    position: absolute;
+    z-index: 1; }
+  iframe {
+    margin-top: 350px;
+    z-index: 2; } }
