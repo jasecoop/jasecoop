@@ -1,16 +1,24 @@
 header {
-  margin: 12px 0 0 0;
   height: 180px;
-  position: fixed;
-  width: 100%;
+  position: relative;
+  top: 12px;
+  width: 800px;
+  margin: 0 auto;
   z-index: 99999;
+}
+
+header nav.main {
+  border-left: solid 1px #000;
+  border-right: solid 1px #000;
+  float: right;
+  width: 39%;
 }
   
   .box {
     background-color: #fff;
     
     display: block;
-    padding: 0 0 0 10px;
+    padding: 0 0 0 5px;
     margin-bottom: 0;
 
     color: #000;
@@ -27,36 +35,27 @@ header {
   }
 
   header h1 {
-    border-left: solid 1px #000;
     float: left;
-    width:138px;
+    width: 151px;
   }
 
   header h2 {
-    border-right: solid 1px #000;
     color: #ccc;
     float: left;
-    width: 170px;
+    text-align: right;
+    padding: 0 5px 0 0 !important;
+    width: 151px;
   }
 
 
-  header nav.main {
-    float: right;
-    width: 340px;
-  }
-
-    header nav.main ul li a {
-      border-left: solid 1px #000;
-    }
 
     header nav a {
       border-bottom: solid 1px #000;
-      border-right: solid 1px #000;
       cursor: pointer;
       
       display: block;
       float: left;
-      width: 328px;
+      width: 307px;
     }
     
     header nav a.current  {

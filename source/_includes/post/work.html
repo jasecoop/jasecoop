@@ -1,0 +1,16 @@
+<div class="work">
+
+  {% for item in page.work %}
+
+    {% for item in item.image %}
+
+      <img src="/images/work/{{ item }}">
+
+
+    {% endfor %}
+
+     <p class="caption">{{ item.caption}}</p>
+  
+  {% endfor %}
+
+</div>

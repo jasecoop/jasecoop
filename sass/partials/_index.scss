@@ -1,5 +1,26 @@
+	nav.index ul{
+	-webkit-transition: all 1000ms ease-in-out;
+	-moz-transition: all 1000ms ease-in-out;
+    -ms-transition: all 1000ms ease-in-out;
+    -o-transition: all 1000ms ease-in-out;
+	transition: all 1000ms ease-in-out;
+
+	width: 100%;
+	position: absolute;
+}
+	nav.index li {
+	display: block;
+	float: left;
+	margin: 0 0 15px 0;
+	width: 300px;
+	height: 185px;	
+
+
+}
+
 nav.index li:nth-of-type(2n){
 		margin: 0 25px 15px 25px;
+
 	}
 
 	nav.index li a{
@@ -20,7 +41,7 @@ nav.index li:nth-of-type(2n){
 	}
 
 	nav.index li span.bg {
-		background: url('/img/bg_index_span.png') left bottom no-repeat;
+		background: url('/images/bg_index_span.png') left bottom no-repeat;
 		display: block;
 		position: absolute;
 		margin: 0 0 0 0px;

@@ -2,6 +2,7 @@
 @include global-reset;
 @include reset-html5;
 
+@import "mixins";
 @import "base";
 @import "partials";
 @import "custom";

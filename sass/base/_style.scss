@@ -9,9 +9,19 @@ body.home:active {
 	background: #000;
 }
 
+ul.categories {
+	li {
+		border: solid 1px #000;
+		display: inline;
+		line-height: 30px;
+		padding: 0 5px;
+		@include borderRadius(2px);
+	}
+}
+
 
 .dots {
-	background: url(/img/bg_dots.png);
+	background: url(/images/bg_dots.png);
 	display: block;
 	position: fixed;
 	height: 100%;

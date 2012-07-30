@@ -1,0 +1,13 @@
+// Aside used in .lazyLayout work pages
+
+table.projectInfo {
+	border-top: solid 1px #000;
+	width: 100%;
+	tr {
+		border-bottom: solid 1px #000;
+		line-height: 30px;
+	}
+	td {
+		padding: 14px 0;
+	}
+}

@@ -1,0 +1,51 @@
+ <aside>
+
+    <table class="projectInfo">
+      
+      {% if page.client %}
+        <tr class="client">
+
+          <td>Client</td>
+          <td>{{ page.client }}</td>
+
+        </tr>
+      {% endif %}
+
+      {% if page.urlName %}
+
+        <tr class="url">
+
+          <td>URL</td>
+          <td><a href="{{ page.url }}">{{ page.urlName }}</a></td>
+
+        </tr>
+
+      {% endif %}
+
+      {% if page.categories %}
+        
+        <tr class="role">
+          
+          <td>Role</td>
+
+          <td>
+
+            <ul class="categories">
+            
+            {% for item in page.categories %}
+              
+              <li>{{ item }}</li>
+
+            {% endfor %}
+
+            </ul>
+
+          </td>
+
+        </tr>
+
+      {% endif %}
+
+    </table>
+    
+ </aside>

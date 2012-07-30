@@ -22,9 +22,18 @@
   <link href="{{ root_url }}/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
 
   <!-- JS -->
+  
     <script src="{{ root_url }}/javascripts/jquery-1.7.1.min.js"></script>
     <script src="{{ root_url }}/javascripts/lettering.js"></script>
-    <script src="{{ root_url }}/javascripts/scripts.js" type="text/javascript"></script>
+
+    <!-- / Typekit -->
+    <script src='//use.typekit.net/spn1mbk.js' type='text/javascript'></script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        try{Typekit.load();}catch(e){}
+      //]]>
+    </script>
+    
 
     <!-- Lettering -->
     <script type='text/javascript'>
@@ -35,13 +44,8 @@
       //]]>
     </script>
 
-    <!-- / Typekit -->
-    <script src='//use.typekit.net/spn1mbk.js' type='text/javascript'></script>
-    <script type='text/javascript'>
-      //<![CDATA[
-        try{Typekit.load();}catch(e){}
-      //]]>
-    </script>
+    <script src="{{ root_url }}/javascripts/scripts.js" type="text/javascript"></script>
+
 
   {% include custom/head.html %}
   {% include google_analytics.html %}
