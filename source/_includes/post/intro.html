@@ -2,16 +2,16 @@
 
     <h1>{{ page.title }}</h1>
 
+	  <ul class="categories">
+	  
+	  {% for item in page.categories %}
+	    
+	    <li>{{ item }}</li>
+
+	  {% endfor %}
+
+	  </ul>
+
     {{ content }}
-
-          <ul class="categories">
-          
-          {% for item in page.categories %}
-            
-            <li>{{ item }}</li>
-
-          {% endfor %}
-
-          </ul>
 
 </section>

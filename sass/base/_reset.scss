@@ -17,10 +17,13 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
   padding: 0;
   border: 0;
   outline: 0;
-  font-size: 100%;
-  font-family: futura-pt, futura;
+  font-family: "franklin-gothic-urw" !important;
+  color: #4e4e4e;
+  font-weight: 400; 
+  line-height: 1.55em;
   vertical-align: baseline;
   background: transparent; }
+
 
 article, aside, figure, footer, header, hgroup, nav, section {
   display: block; }

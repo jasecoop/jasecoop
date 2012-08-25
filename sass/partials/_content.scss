@@ -1,0 +1,78 @@
+article.content {
+  z-index: 2;
+  position: relative;
+
+
+  img {
+  	width: 100%;
+  	margin-bottom: 30px;
+  }
+
+  aside {
+    display: block;
+    height: 300px;
+    width: 800px;
+    left: 50%;
+    margin-left:-400px;
+    bottom: 0;
+    position: fixed;
+
+    -webkit-transition: all 1000ms;
+    -moz-transition: all 1000ms;
+    -ms-transition: all 1000ms;
+    -o-transition: all 1000ms ;
+    transition: all 1000ms;
+
+    .header {
+      background: $black;
+      height: 50px;
+      width: 100%;
+      float: right;
+	    h1 {
+        font-family: 'futura-pt' !important;
+        font-weight: 700;
+	    	line-height: 50px;
+	    	margin: 0 0 0 20px;
+	    	color: #fff;
+        float: left;
+        width: 50%;
+	    }
+      a {
+        background: rgba(225,225,225,.2);
+        display: block;
+        float: right;
+        line-height: 50px;
+        height: 50px;
+        width: 50px;
+
+        color: #fff;
+        font-family: 'futura-pt' !important;
+        font-weight: 700;
+        text-align: center;
+      }
+    }
+    
+    .body {
+      background: #e8edf7;  
+      height: auto;
+      height: 200px;
+      padding: 30px 0;
+      margin-top: 50px;
+
+      .main {
+        width: 40%;
+        margin-left: 40px;
+        float: left;
+      }
+      .cat {
+        width: 30%;
+        margin-left: 40px;
+        float: left;
+      }
+    }
+  }
+
+  aside.asleep {
+
+  }
+}

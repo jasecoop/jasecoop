@@ -3,3 +3,18 @@
 	-moz-border-radius: $radius;
 	border-radius: $radius;
 }
+
+@mixin futureCaps {
+	font-family: futura-pt;
+    font-weight: 700;
+    font-size: 1em;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #000; 
+}
+
+
+// Colours
+
+$black: #2a2e36;
+$grey: #9ea1ad;

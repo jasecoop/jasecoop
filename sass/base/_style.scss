@@ -9,13 +9,30 @@ body.home:active {
 	background: #000;
 }
 
+.do {
+	background: url(/images/bg_dots.png);
+	display: block;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index:2;
+}
+
+.logo {
+  background: url(../images/logo.png);
+  display: block;
+  width: 78px;
+  height: 77px;
+}
+
 ul.categories {
 	li {
+		@include futureCaps;
 		border: solid 1px #000;
 		display: inline;
 		line-height: 30px;
 		padding: 0 5px;
-		@include borderRadius(2px);
+		@include borderRadius(1px);
 	}
 }
 

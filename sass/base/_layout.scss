@@ -1,32 +1,22 @@
-body {
+body, html {
   width: 100%;
   height: 100%; }
 
-// .lazyLayout used for default 2-column portfolio layout
-.lazyLayout {
-  
-  aside {
-    background: white;
-    float: right;
-    width: 39%;
-    padding: 30px 0;
-    p {
-      padding: 0 0; } 
-  }
-  
-  .intro {
-    float: left;
-    width: 61%; }
+.wrapperFullscreen {
+  max-width: 2000px;
+  height: 100%;
+  margin: 0 auto;
+}
 
-  .work {
-    width: 100%;
+.wrapper {
+  height: 85%;
+  max-width: 100%;
+  margin: 0 0 0 0;
+}
 
-    img {
-      border: 1px solid #9c9c9c;
-    }
-  }
-
-
+article.content {
+  max-width: 860px;
+  margin: 0 auto;
 }
 
 .border {
@@ -82,20 +72,3 @@ body {
 .corner-bottom-right {
   top: 0;
   right: 0; }
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  z-index: 3;
-  position: relative; }
-
-#content {
-  z-index: 3;
-  position: relative;
-}
-
-#content.top-padding {
-  margin-top: 162px; }
-
-
-@media screen and (max-width: 960px) {}

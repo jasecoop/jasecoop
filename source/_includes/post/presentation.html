@@ -1,0 +1,57 @@
+<article class="content" id="{{ post.title }}">
+
+	{% for item in post.work %}
+
+		{% for item in item.image %}
+
+	  	<img class="dsfsdf" src="/images/work/{{ item }}">
+
+
+		{% endfor %}
+
+  
+  {% endfor %}
+
+
+	<aside class="info" style="bottom: -300px;">
+
+		<div class="header">
+
+			<h1>{{ post.title }}</h1>
+
+			<a href="#">.&nbsp;.&nbsp;.</a>
+
+		</div>
+
+		<div class="body">
+
+      <div class="main">
+
+        {{ post.desc }}
+
+		  </div>
+
+  		<div class="cat">
+
+        <ul>
+
+          {% for item in post.categories %}
+
+            <li>{{ item }}</li>
+
+          {% endfor %}
+
+        </ul>
+
+  		</div>
+
+      <div class="clearfix"></div>
+
+    </div>
+
+
+	</aside>
+
+	<div class="clearfix"></div>
+
+</article>

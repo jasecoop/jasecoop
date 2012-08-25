@@ -2,39 +2,8 @@
 layout: default
 ---
 
+{% for post in site.posts %}
 
-<div class='home top-padding' id='content'>
-  
-  <div class='container'>
-  
-    <h1>Design portfolio</h1>
-  
-    <nav class='index'>
+	{% include post/presentation.html %}
 
-      <ul>
-        {% for post in site.posts %}
-        <li>
-
-          <a href="{{post.url}}">
-            <img src="/images/thumbnails/{{ post.thumb }}">
-          </a>
-
-          <span class="bg"></span>
-
-        </li>
-        {% endfor %}
-
-      </ul>
-    
-    </nav>
-
-  <div>
-
-</div>
-
-  
-
-
-
-
-
+{% endfor %}
