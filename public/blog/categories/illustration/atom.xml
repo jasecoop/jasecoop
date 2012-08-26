@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Illustration | Jason Cooper]]></title>
+  <link href="http://jasecoop.com/blog/categories/illustration/atom.xml" rel="self"/>
+  <link href="http://jasecoop.com/"/>
+  <updated>2012-08-26T01:44:23+01:00</updated>
+  <id>http://jasecoop.com/</id>
+  <author>
+    <name><![CDATA[Jason Cooper]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Casserdfdsfle]]></title>
+    <link href="http://jasecoop.com/blog/2012/08/13/casserole/"/>
+    <updated>2012-08-13T00:19:00+01:00</updated>
+    <id>http://jasecoop.com/blog/2012/08/13/casserole</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+</feed>
