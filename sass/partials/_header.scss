@@ -7,31 +7,37 @@ header {
   left: 50%;
   margin-left: -400px;
   position: fixed;
+  z-index: 3;
 
     .logo {
       background: url(../images/logo_500x500.png) left no-repeat;
       background-size: 50px 50px;
       display: block;
-      width: 100%;
+      width: 50%;
       height: 80px;
-      margin: 0 auto;
+      float: left;
     }
 
   nav {
-    margin: 0 auto;
-    width: 140px;
+    float: right;
+    width: 50%;
 
     ul {
+      float: right;
 
       li {
+        display: inline;
+        float: left;
         a {
           color: $black;
           display: block;
-          padding: 8px 0px;
-          width: 100%;
+          line-height: 25px;
           text-align: left;
-          margin: 0 0 0px 0;
-          width: 140px;
+          margin: 50px 0 0 30px;
+
+          &.current{
+            border-bottom: solid 5px $black;
+          }
         }
       }
     }

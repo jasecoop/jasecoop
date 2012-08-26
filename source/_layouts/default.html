@@ -3,19 +3,18 @@
 
 <body {% if page.body_id %} id="{{ page.body_id }}" {% endif %} {% if page.sidebar == false %} class="no-sidebar" {% endif %} {% if page.sidebar == 'collapse' or site.sidebar == 'collapse' %} class="collapse-sidebar sidebar-footer" {% endif %}>
 
-<div class="dots"></div>
-
-<div class="wrapperFullscreen">
-
-    <div class="wrapper">
-
       {% include header.html %}
+
+      <div class="intro">
+
+      	    <h1 style="display: none;">Coop designs web sites, applications and brands.</h1>
+
+      </div>
 
       {{ content | expand_urls: root_url }}
 
-    </div>
 
-</div>
+	<div class="clearfix"></div>
 
 </body>
 </html>

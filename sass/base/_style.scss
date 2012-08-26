@@ -9,13 +9,23 @@ body.home:active {
 	background: #000;
 }
 
-.do {
-	background: url(/images/bg_dots.png);
-	display: block;
+.intro {
+	background: url(../images/sketch.png) bottom  no-repeat;
+	width: 800px;
+	margin: 0 auto;
 	position: fixed;
-	width: 100%;
-	top: 0;
-	z-index:2;
+	z-index: 1;
+	left: 50%;
+	top: 0px;
+	margin-left: -400px;
+
+    h1 {
+		font-family: "futura-pt" !important;
+	    font-weight: 700;
+	    font-size: 30px;
+	    text-align: center;
+	    color: $black;
+    }
 }
 
 .logo {
@@ -38,10 +48,12 @@ ul.categories {
 
 
 .dots {
-	background: url(/images/bg_dots.png);
+	background: red;
+	// background: url(/images/bg_dots.png);
 	display: block;
-	position: fixed;
-	height: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
 	width: 100%;
 	top: 0;
 	z-index:2;

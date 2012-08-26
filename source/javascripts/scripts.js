@@ -58,33 +58,20 @@ function fixedAsideOpen() {
 		var xTop = $(this).offset().top;
 		var xBottom = xTop + $(this).height();
 
-		if (xTop <= winTop && xBottom >= winTop) {
+		var xDiff = xTop - halfWin;
+
+
+
+		if (xDiff <= winTop) {
+			
 			$(this).addClass('active');
+			$(this).children('.info').attr('style','bottom: 0px;');
 		} else {
 			$(this).removeClass('active');
 			$(this).children('.info').attr('style','bottom: -300px;');
 		}
 
 	});
-
-	if($('.active').length){
-
-		var src = $(this).scrollTop();
-		var offset = $('.active').offset();
-
-		$('.aside.sleep').attr('style','');
-
-		if (src >= offset.top){
-		
-			$('.active').children('.info').css('bottom','0');
-
-		} else {
-        
-    	$('.active').children('.info').attr('style','');
-    	
-    }
-
-	}
 
 
 }
@@ -92,15 +79,22 @@ function fixedAsideOpen() {
 function fixedAsideClosed() {
 
 	var winTop = $(window).scrollTop();
-	var halfWinTop = winTop / 2;
+	var win = $(window).height();
+	var halfWin = win / 3;
 
 	$('article.content').each(function(){
 
 		var xTop = $(this).offset().top;
 		var xBottom = xTop + $(this).height();
 
-		if (xTop <= winTop && xBottom >= winTop) {
+		var xDiff = xTop - halfWin;
+
+
+
+		if (xDiff <= winTop) {
+			
 			$(this).addClass('active');
+			$(this).children('.info').attr('style','bottom: -250px;');
 		} else {
 			$(this).removeClass('active');
 			$(this).children('.info').attr('style','bottom: -300px;');
@@ -108,24 +102,7 @@ function fixedAsideClosed() {
 
 	});
 
-	if($('.active').length){
-
-		var src = $(this).scrollTop();
-		var offset = $('.active').offset();
-
-		$('.aside.sleep').attr('style','');
-
-		if (src >= offset.top){
-		
-			$('.active').children('.info').css('bottom','-250px');
-
-		} else {
-        
-    	$('.active').children('.info').attr('style','-300px');
-    	
-    }
-
-	}
+	
 
 }
 
@@ -146,9 +123,24 @@ $(window).scroll(function(){
 });
 
 
+function intro(){
+
+	var h =  $(window).height(); 
+
+	$(".intro").attr('style','height:' + h + 'px');
+
+	$(".intro h1").fadeIn('slow');
+
+	$(".intro h1").attr('style','line-height:' + h + 'px');
+
+	$("body").attr('style','padding-top:' + h + 'px');
+
+}
+
+
 $(document).ready(function() {
 
   asideToggle();
-  background();
+  intro();
 
 });
