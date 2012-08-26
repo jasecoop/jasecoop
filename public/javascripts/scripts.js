@@ -140,7 +140,11 @@ function intro(){
 
 $(document).ready(function() {
 
-  asideToggle();
-  intro();
+	if ($("#portfolio").length){
+	
+	  asideToggle();
+	  intro();
+	
+	}
 
 });
